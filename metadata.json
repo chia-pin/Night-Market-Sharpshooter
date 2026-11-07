@@ -1,0 +1,6 @@
+{
+  "name": "夜市神射手 - 射氣球打靶射擊遊戲",
+  "description": "體驗台灣經典夜市射氣球與打靶射擊遊戲！在隨機窗口滑動與短暫出現的鴨子、旋轉靶、五彩氣球縮回去之前迅速瞄準射擊，集點兌換超萌夜市娃娃與戰利品！",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

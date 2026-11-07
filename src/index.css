@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Carnival Aesthetics & Animations */
+@keyframes buntingWave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(1.5deg); }
+}
+
+@keyframes duckWobble {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(-4deg); }
+  75% { transform: translateY(-1px) rotate(4deg); }
+}
+
+@keyframes lightBulbGlow {
+  0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.6)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 14px rgba(251, 191, 36, 0.95)); }
+}
+
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff0055, 0 0 20px #ff0055, 0 0 40px #ff0055;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+.animate-bunting {
+  animation: buntingWave 4s ease-in-out infinite;
+}
+
+.animate-duck-wobble {
+  animation: duckWobble 0.8s ease-in-out infinite;
+}
+
+.animate-bulb-glow {
+  animation: lightBulbGlow 2s ease-in-out infinite;
+}
+
+.neon-title {
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.8), 0 0 20px rgba(239, 68, 68, 0.6);
+}
+
+.target-crosshair {
+  cursor: crosshair;
+}
